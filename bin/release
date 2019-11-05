@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require_relative '../lib/acts_as_boolean/version'
+
+version = ActsAsBoolean::VERSION
+system("gem build acts_as_boolean.gemspec")
+system("gem push acts_as_boolean-#{version}.gem")
+system("rm acts_as_boolean-#{version}.gem")
+system("git tag -a v#{version} -m 'version #{version}'")
+system("git push origin v#{version}")
+system("git commit -am 'Version #{version}'")
+system("git push")
