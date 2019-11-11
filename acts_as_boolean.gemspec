@@ -5,7 +5,7 @@ require "acts_as_boolean/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |spec|
-  spec.name        = "ActsAsBoolean"
+  spec.name        = "acts_as_boolean"
   spec.version     = ActsAsBoolean::VERSION
   spec.authors     = ["Josh Brody"]
   spec.email       = ["josh@josh.mn"]
